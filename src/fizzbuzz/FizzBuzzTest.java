@@ -1,6 +1,6 @@
 package fizzbuzz;
 
-import static org.junit.jupiter.api.Assertions.*;
+//import static org.junit.jupiter.api.Assertions.*;
 
 
 import org.junit.Assert;
@@ -16,8 +16,10 @@ class FizzBuzzTest {
 		Assert.assertEquals("FizzBuzz", FizzBuzz.verify(30));
 		Assert.assertEquals("Fizz", FizzBuzz.verify(9));
 		Assert.assertEquals("Buzz", FizzBuzz.verify(10));
+		Assert.assertEquals("Fizz",FizzBuzz.verify(13));
+		Assert.assertEquals("FizzBuzz",FizzBuzz.verify(53));
+		Assert.assertEquals("Buzz",FizzBuzz.verify(52));
 		
 	}
 	
-
 }
