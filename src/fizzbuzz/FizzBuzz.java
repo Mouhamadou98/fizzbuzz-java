@@ -25,7 +25,6 @@ public class FizzBuzz {
 			return "Fizz";
 		}
 
-		
 		return outValue;
 	}
 	

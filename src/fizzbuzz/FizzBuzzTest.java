@@ -13,6 +13,8 @@ class FizzBuzzTest {
 	void testVerify() {
 		
 		Assert.assertEquals("1", FizzBuzz.verify(1));
+		Assert.assertEquals("2", FizzBuzz.verify(2));
+		Assert.assertEquals("4", FizzBuzz.verify(4));
 		
 		Assert.assertEquals("FizzBuzz", FizzBuzz.verify(30));
 		Assert.assertEquals("FizzBuzz",FizzBuzz.verify(53));
