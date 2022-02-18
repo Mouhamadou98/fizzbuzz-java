@@ -5,48 +5,29 @@ public class FizzBuzz {
 	public static String verify(int number) {
 		
 		int numb = number;
-		
-		if(number %15 == 0)
-			return "FizzBuzz";
-		if(number %5 == 0)
-			return "Buzz";
-		if(number %3 == 0)
-			return "Fizz";
-		
 		String outValue = String.valueOf(numb);
+		boolean cond =  outValue.contains("5") && outValue.contains("3");
 		
-		if(outValue.contains("5") && outValue.contains("3") )
+		
+		if(number %15 == 0 || cond)
 			return "FizzBuzz";
-		if(outValue.contains("5"))
+		
+		if(number %5 == 0 || outValue.contains("5")) {
+			
+			if(outValue.contains("3"))
+				return "FizzBuzz";	
 			return "Buzz";
-		if(outValue.contains("3"))
+		}
+		
+		if(number %3 == 0 || outValue.contains("3")) {			
+			if(outValue.contains("5"))
+				return "FizzBuzz";
 			return "Fizz";
+		}
+
 		
 		return outValue;
 	}
 	
-//	public static String otherCase(int nombre) {
-//		
-//		int numb = nombre;
-//		String chaine = String.valueOf(numb);
-//		String result="";
-//		
-//		for(int i = 0; i < chaine.length(); i++) {
-//			
-//			String strVar = Character.toString(chaine.charAt(i));
-//			
-//			if(strVar.equals("3"))
-//				result += "Fizz";
-//			if(strVar.equals("5"))	
-//				result += "Buzz";
-//		}
-//		
-//		if(result.equals(""))
-//			result = String.valueOf(numb);
-//		if(result.equals("BuzzFizz")) 
-//			result = "FizzBuzz";
-//		
-//		return result;
-//	}
-	
+
 }
