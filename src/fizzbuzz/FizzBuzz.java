@@ -13,32 +13,40 @@ public class FizzBuzz {
 		if(number %3 == 0)
 			return "Fizz";
 		
-		String outValue = otherCase(numb);
+		String outValue = String.valueOf(numb);
+		
+		if(outValue.contains("5") && outValue.contains("3") )
+			return "FizzBuzz";
+		if(outValue.contains("5"))
+			return "Buzz";
+		if(outValue.contains("3"))
+			return "Fizz";
+		
 		return outValue;
 	}
 	
-	public static String otherCase(int nombre) {
-		
-		int numb = nombre;
-		String chaine = String.valueOf(numb);
-		String result="";
-		
-		for(int i = 0; i < chaine.length(); i++) {
-			
-			String strVar = Character.toString(chaine.charAt(i));
-			
-			if(strVar.equals("3"))
-				result += "Fizz";
-			if(strVar.equals("5"))	
-				result += "Buzz";
-		}
-		
-		if(result.equals(""))
-			result = String.valueOf(numb);
-		if(result.equals("BuzzFizz")) 
-			result = "FizzBuzz";
-		
-		return result;
-	}
+//	public static String otherCase(int nombre) {
+//		
+//		int numb = nombre;
+//		String chaine = String.valueOf(numb);
+//		String result="";
+//		
+//		for(int i = 0; i < chaine.length(); i++) {
+//			
+//			String strVar = Character.toString(chaine.charAt(i));
+//			
+//			if(strVar.equals("3"))
+//				result += "Fizz";
+//			if(strVar.equals("5"))	
+//				result += "Buzz";
+//		}
+//		
+//		if(result.equals(""))
+//			result = String.valueOf(numb);
+//		if(result.equals("BuzzFizz")) 
+//			result = "FizzBuzz";
+//		
+//		return result;
+//	}
 	
 }

@@ -18,7 +18,7 @@ class FizzBuzzTest {
 		Assert.assertEquals("Buzz", FizzBuzz.verify(10));
 		Assert.assertEquals("Fizz",FizzBuzz.verify(13));
 		Assert.assertEquals("FizzBuzz",FizzBuzz.verify(53));
-		Assert.assertEquals("Buzz",FizzBuzz.verify(52));
+		Assert.assertEquals("Fizz",FizzBuzz.verify(13));
 		
 	}
 	
