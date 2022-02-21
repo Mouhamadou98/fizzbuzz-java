@@ -17,17 +17,22 @@ class FizzBuzzTest {
 		Assert.assertEquals("4", FizzBuzz.verify(4));
 		
 		Assert.assertEquals("FizzBuzz", FizzBuzz.verify(30));
-		Assert.assertEquals("FizzBuzz",FizzBuzz.verify(53));
-		Assert.assertEquals("FizzBuzz",FizzBuzz.verify(35));
+		Assert.assertEquals("FizzBuzz", FizzBuzz.verify(53));
+		Assert.assertEquals("FizzBuzz", FizzBuzz.verify(35));
 		
 		Assert.assertEquals("Buzz", FizzBuzz.verify(10));
 		Assert.assertEquals("Buzz", FizzBuzz.verify(20));
 		Assert.assertEquals("Buzz", FizzBuzz.verify(25));
 		
 		Assert.assertEquals("Fizz", FizzBuzz.verify(9));
-		Assert.assertEquals("Fizz",FizzBuzz.verify(13));
+		Assert.assertEquals("Fizz", FizzBuzz.verify(13));
 		Assert.assertEquals("Fizz", FizzBuzz.verify(31));
 		
+		
+		Assert.assertNotEquals("Fizz", FizzBuzz.verify(1));
+		Assert.assertNotEquals("Fizz", FizzBuzz.verify(5));
+		Assert.assertNotEquals("Buzz", FizzBuzz.verify(3));
+		Assert.assertNotEquals("Fizz", FizzBuzz.verify(35));
 	}
 	
 }
